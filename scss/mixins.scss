@@ -1,0 +1,23 @@
+// -- Clearfix -- //
+// @extend .clearfix
+
+
+// -- Equal Spaced Columns -- //
+// Number of Columns - First Column
+// Remaining Number of Columns * Margin Spacing
+// Container Width - Total Margin Spacing
+// Remaining Width / Total Number of Columns
+
+@mixin equalSpaced( $num_of_cols, $spacing, $width  ){
+  
+  width: ( $width - ( $spacing * ($num_of_cols - 1) ) ) / $num_of_cols;
+  margin-left: $spacing;
+  
+  // Remove Spacing from First Child
+  
+  
+}
+
+
+
+

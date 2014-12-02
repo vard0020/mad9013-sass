@@ -1,0 +1,81 @@
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+@import 'sticky-footer';
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.wrapper {margin:0 auto;
+wodth:90%;}
+
+.masthead, .foot {background-color: $wrap-color;
+margin: 20px;
+padding: 1rem;
+clear:both;}
+
+.masthead {text-align:center;}
+  
+.row {
+    margin: 5% auto;
+    max-width:95%;
+    @extend .clearfix;
+    padding-left: 3rem;
+    padding-right:1rem;  
+}
+
+ .col-3:hover
+{
+        border-radius:20%;
+        transition-duration: 1s;
+}
+
+.col-3 {display:inline-block;
+    position: relative;
+    vertical-align: top;
+    border: 4px solid black;
+    padding: 0.5rem;
+    @include equalSpaced( 3, 5%, 70%); 
+    width: 300px;
+    box-shadow: 0 0 5px #ddd;
+}
+
+.col-4 {display:inline-block;
+    padding: 0.5rem;
+    border: 4px solid grey;
+    @include equalSpaced( 4, 5%, 70%);
+box-shadow: 0 0 5px #ddd;}
+
+.iconic {display:block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
